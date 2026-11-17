@@ -1,0 +1,77 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+main {
+  flex: 1;
+  padding: 35px 20px;
+}
+
+.parent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #dbeafe;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+}
+
+.parent h2,
+.child h2,
+.grandchild h2 {
+  margin-bottom: 12px;
+}
+
+.parent p,
+.child p,
+.grandchild p {
+  margin-bottom: 15px;
+}
+
+.child {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: #dcfce7;
+  border: 2px solid #16a34a;
+  border-radius: 12px;
+}
+
+.grandchild {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #fef3c7;
+  border: 2px solid #d97706;
+  border-radius: 12px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #1e293b;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .parent,
+  .child,
+  .grandchild {
+    padding: 18px;
+  }
+}
